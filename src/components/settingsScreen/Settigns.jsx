@@ -2,8 +2,8 @@ import React from 'react';
 
 const Settings = () => {
   return (
-    <div>
-      
+    <div className='setting'>
+      <h2>Carlos Bueno</h2>
     </div>
   )
 };

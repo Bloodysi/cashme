@@ -16,18 +16,18 @@
 }
 .balance-title {
   margin-bottom: 0.5rem;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .balance-cash {
   background-color: black;
-  font-family: 'Quantico', sans-serif;
-  font-weight: 600;
+  font-family: 'Quantico', sans-serif !important;
+  font-weight: 400;
   padding: 2rem 6rem;
   border-radius: 2.6rem;
   color: var(--white);
   font-size: 4rem;
-  box-shadow: 8px 5px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 8px 5px 25px rgba(0, 0, 0, 0.4);
 }
 
 .balance-button {
@@ -38,3 +38,6 @@
   display: none;
 }
 
+.balance-number {
+  font-family: 'Quantico', sans-serif !important;
+}

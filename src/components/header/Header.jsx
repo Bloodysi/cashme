@@ -12,8 +12,8 @@ const Header = () => {
       <nav className='header__nav'>
         
         <div className='logo'>
-          <h2>Cash</h2>
-          <h2 className='logo-green'>Me</h2>
+          <p>Cash</p>
+          <p className='logo-green'>Me</p>
         </div>
 
         
