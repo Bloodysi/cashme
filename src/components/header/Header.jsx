@@ -4,6 +4,7 @@ import './Header.css';
 const Header = () => {
 
   const [navbar, setNavbar] = useState(false)
+  
 
   return (
     
@@ -17,12 +18,12 @@ const Header = () => {
 
         
         <i 
-          className={!navbar ? "fas fa-bars navbar-icon" : "far fa-times-circle navbar-icon"}
+          className={!navbar ? "fas fa-bars navbar-icon" : "far fa-times-circle navbar-icon white openIcon "}
           onClick={()=> setNavbar(!navbar)} 
         />
 
     	  
-        <ul className={`header__nav-list ${navbar ? 'open' : 'close'}`}>
+        <ul className={`header__nav-list ${navbar ? 'open'  : 'close'}`}>
           <li><i className="fas fa-book"></i>Records</li>
           <li><i className="fas fa-chart-bar"></i>Chart</li>
           <li><i className="fas fa-cog"></i>Setting</li>

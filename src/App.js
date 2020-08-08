@@ -3,6 +3,7 @@ import './App.css';
 
 import Header from './components/header/Header';
 import Balance from './components/balance/Balance';
+import AddRecord from './components/addRecord/AddRecord';
 
 
 function App() {
@@ -10,7 +11,14 @@ function App() {
     <div className="App">
       
       <Header />
-      <Balance />
+      
+      <main>
+        <section>
+          <Balance />
+          <AddRecord />
+        </section>
+      </main> 
+      
       
     </div>
   );

@@ -5,6 +5,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+  font-family: 'Righteous', cursive;
+}
+
+:root {
+  --color-red: #dc3445;
+  --color-green: #28a745;
+  --white: #f3f3f3;
+  --grey: #646464;
+  --light-grey: #f9f9f9;
+  --dark-grey: #878787;
+  --form-grey: #c4c4c4
 }
 
 html {
@@ -12,6 +24,21 @@ html {
 }
 
 body {
-  font-family: 'Righteous', cursive;
+  
 }
 
+/* BG COLOR */
+
+.green {
+  background-color: var(--color-green)
+}
+
+.red{
+  background-color: var(--color-red)
+}
+
+.white {
+  color: white;
+}
+
+@import './styles/form.css';

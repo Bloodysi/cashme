@@ -1,13 +1,10 @@
-.section__balance{
-    margin: 0;
-    padding: 0;
-    margin-top: 0.2rem;
 
-}
 .balance__container{
     display: flex;
     flex-direction: column;    
     align-items: center;
+    margin-top: 4rem;
+    
 }
 .balance__container h2{
     font-size: 1.8em;
@@ -25,10 +22,12 @@
 .balance-cash {
   background-color: black;
   font-family: 'Quantico', sans-serif;
+  font-weight: 600;
   padding: 2rem 6rem;
   border-radius: 2.6rem;
-  color: white;
+  color: var(--white);
   font-size: 4rem;
+  box-shadow: 8px 5px 40px rgba(0, 0, 0, 0.4);
 }
 
 .balance-button {
@@ -36,4 +35,6 @@
   align-items: center;
   margin-top: 0.5rem;
   cursor: pointer;
+  display: none;
 }
+
