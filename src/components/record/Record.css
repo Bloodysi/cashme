@@ -1,0 +1,25 @@
+
+.record-container{
+  width: 100%;
+}
+
+.record-section-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.record-section {  
+  font-size: 3rem;
+}
+
+.record-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  cursor: pointer;
+}

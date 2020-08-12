@@ -23,22 +23,55 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  
+a {
+  text-decoration: none;
+  color: black
 }
+
+.section-title {
+  background-color: var(--white);
+  height: 7.5rem;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--dark-grey);
+  line-height: 7.5rem;
+  margin-top: 5px
+}
+
+
+/* DISPLAYS */
+
+.none {
+  display: none !important;
+}
+
 
 /* BG COLOR */
 
 .green {
-  background-color: var(--color-green)
+  background-color: var(--color-green) !important;
 }
 
 .red{
-  background-color: var(--color-red)
+  background-color: var(--color-red) !important;
 }
+
 
 .white {
   color: white;
+}
+
+/* BUTTONS */
+
+.btn {
+  border: none;
+  background-color: var(--dark-grey);
+  padding: 15px 10px;
+  width: 100px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 2rem
 }
 
 @import './styles/form.css';

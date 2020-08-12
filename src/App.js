@@ -1,24 +1,31 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Header from './components/header/Header';
-import Balance from './components/balance/Balance';
-import AddRecord from './components/addRecord/AddRecord';
+import Home from './components/home/Home';
+import Settings from './components/settingsScreen/Settigns';
+import Record from './components/record/Record';
+import Login from './components/login/Login';
+import Register from './components/register/register';
 
 
-function App() {
+
+
+function App() {  
+
   return (
     <div className="App">
       
-      <Header />
-      
-      <main>
-        <section>
-          <Balance />
-          <AddRecord />
-        </section>
-      </main> 
-      
+      <Router>
+        <Header />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/settings' component={Settings} />
+        <Route exact path='/record' component={Record} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/register' component={Register} />
+
+      </Router>   
       
     </div>
   );
