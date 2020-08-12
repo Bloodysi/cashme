@@ -1,27 +1,45 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
-export const context = createContext()
+import axios from 'axios';
+export const context = createContext();
 
 export const  ContextProvider = (props) => {
-
-  
-    const d = new Date()
-    const month = d.getMonth()
-    const day = d.getUTCDate()
-
-    const months = ['january', 'february', 'march', 'april', 'may', 'june', 'jule', 'august', 'sepetember', 'october', 'november']
 
 
   const [records, setRecords] = useState([])
   const [user, setUser] = useState(null)
 
+  useEffect(()=> {
+    fetchRecords()
+  }, []);
+  
+  const fetchRecords = async () => {
+    const { data } = await axios('api/records')
+    if(data){
+      setRecords(data.body)
+    }
+  }
+
+  const postRecords = async (data) => {
+    await axios('api/records', ({
+      headers: {
+        'content-type': 'application/json'
+      },
+      method: 'POST',
+      data
+    }))
+    fetchRecords()
+  }
+
+  console.log(records)
 
   return (
    <context.Provider value={{
      records,
      setRecords,
      user,
-     setUser
+     setUser,
+     postRecords
     }}>
      {props.children}
    </context.Provider> 

@@ -4,15 +4,9 @@ import './Record.css';
 import RecordCard from '../recordCard/RecordCard';
 import { context } from '../../context';
 
-const Record = () => {
-
-    let [i, setI] = useState()
-
-    const dateType = ['Days', 'Weeks', 'Months']
+const Record = () => {   
     
     const { records } = useContext(context)
-
-
 
     return( 
         <div className="record-container">
@@ -24,9 +18,7 @@ const Record = () => {
                         <i className="fas fa-book" />
                         Records
                     </div>
-                        <button 
-                            className='record-btn' 
-                            onClick={()=> setI(i++) }>{dateType[i]}</button>
+                        <button className='record-btn'>Days</button>
                 </div>
             </div>   
 

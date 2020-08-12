@@ -9,7 +9,7 @@ const AddRecord = ({ openRecord }) => {
   const [category, setCategory] = useState('')
   const [type, setType] = useState('')
 
-  const { records, setRecords } = useContext(context)
+  const { records, setRecords, postRecords } = useContext(context)
 
   const addRecord = (e) => {
 
@@ -19,7 +19,7 @@ const AddRecord = ({ openRecord }) => {
       return null
     }
     else{
-      setRecords([...records, {category, money, type}])
+      postRecords({category, money, type})
       setMoney('')
       setCategory('')
       setType('')
